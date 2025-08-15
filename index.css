@@ -277,3 +277,136 @@ p{
 .contact-icon:hover {
   transform: scale(1.1);
 }
+
+/* FOOTER */
+footer {
+  background-color:black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    width: 100%;
+  }
+
+  /* HERO SECTION */
+  #hero {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .heroContent {
+    width: 100%;
+  }
+
+  .myImage {
+    height: 120px;
+    width: 120px;
+  }
+
+  .heroButtons {
+    margin: 5px;
+  }
+
+  /* ABOUT ME SECTION */
+  #aboutmesection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  .tech-scroll {
+    width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 20px 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; 
+  }
+
+  .logo-track {
+    width: max-content;
+  }
+
+  .logo-track img {
+    height: 50px;
+  }
+
+  .aboutmetext {
+    margin: 0;
+    max-width: 90%;
+  }
+
+  /* SKILLS SECTION */
+  .skillsDiv {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skillsDiv .p1,
+  .skillsDiv .p2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skillslist {
+    justify-content: center;
+  }
+
+  /* PROJECT SECTION */
+  .project {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .project .p1,
+  .project .p2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project .p1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project .p2 ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .button-center {
+    justify-content: center;
+  }
+
+  /* CONTACT SECTION */
+  .contact-container {
+    gap: 20px;
+  }
+
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 12px;
+    padding: 15px;
+  }
+}
