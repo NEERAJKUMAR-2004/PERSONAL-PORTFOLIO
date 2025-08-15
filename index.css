@@ -295,16 +295,20 @@ footer {
 
 
 /* MOBILE VERSION */
+
+
 @media only screen and (max-width: 768px) {
   /* Navbar */
   .navbar {
     width: 100%;
+    scroll-padding-top: 70px; /* Adjust height same as navbar height */
+
   }
 
   /* HERO SECTION */
   #hero {
     flex-direction: column;
-    height: auto;
+    height: 85vh;
     padding: 40px 20px;
     text-align: center;
   }
@@ -331,13 +335,16 @@ footer {
   }
 
   .tech-scroll {
-    width: 100%;
+  width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   margin: 20px 0;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; 
-  }
+  display: flex;
+  justify-content: center; 
+}
+
 
   .logo-track {
     width: max-content;
@@ -346,11 +353,19 @@ footer {
   .logo-track img {
     height: 50px;
   }
-
   .aboutmetext {
-    margin: 0;
-    max-width: 90%;
-  }
+  margin-left: auto !important;
+  margin-right: auto !important;
+  flex-grow: 0 !important;
+  max-width: 90%;
+  text-align: center;
+}
+
+.heading {
+  text-align: center; 
+  width: 100%;
+}
+
 
   /* SKILLS SECTION */
   .skillsDiv {
